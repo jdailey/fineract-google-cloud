@@ -45,8 +45,8 @@ get_modules() {
 
 
 
-get modules fineract-cn-template 
-get modules fineract-cn-office fineract-cn-customer fineract-cn-group fineract-cn-accounting fineract-cn-portfolio 
-get modules fineract-cn-deposit-account-management fineract-cn-cheques 
-get modules fineract-cn-payroll fineract-cn-teller fineract-cn-reporting fineract-cn-notifications
+get_modules fineract-cn-template 
+get_modules fineract-cn-office fineract-cn-customer fineract-cn-group fineract-cn-accounting fineract-cn-portfolio 
+get_modules fineract-cn-deposit-account-management fineract-cn-cheques 
+get_modules fineract-cn-payroll fineract-cn-teller fineract-cn-reporting fineract-cn-notifications
 
