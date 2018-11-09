@@ -16,9 +16,13 @@
 # specific language governing permissions and limitations
 # under the License.
 #
+# forked from https://github.com/apache/fineract-cn-demo-server/blob/develop/scripts/Unix/initial-setup.sh 
 
 #!/bin/bash
 #Ensure that you have forked Fineract CN repositories from your githubAccount
+# Note: Need a test via github API to determine that you have the said repos, 
+# otherwise this fails less than gracefully 
+
 githubAccount=$1
 
 # REM create core folder
@@ -32,7 +36,9 @@ get_modules() {
     cd $module
     git remote add upstream https://github.com/apache/$module.git
     # For some reason permission gets denied
-    chmod +x gradlew
+    # chmod +x gradlew
+    # commenting this out for now - seems a local machine issue only 
+
     ./gradlew publishToMavenLocal
     echo "Built" $module
     cd ..
@@ -69,6 +75,7 @@ mkdir integration-tests
 cd integration-tests
 
 get_modules fineract-cn-service-starter fineract-cn-default-setup fineract-cn-demo-server
+
 
 # REM initialize Web App
 git clone https://github.com/$githubAccount/fineract-cn-fims-web-app.git
