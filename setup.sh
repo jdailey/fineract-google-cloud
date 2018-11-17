@@ -61,9 +61,9 @@ cd ..
 
 get_modules fineract-cn-anubis fineract-cn-identity fineract-cn-permitted-feign-client fineract-cn-provisioner fineract-cn-rhythm 
 #get modules fineract-cn-template 
-get modules fineract-cn-office fineract-cn-customer fineract-cn-group fineract-cn-accounting fineract-cn-portfolio 
-get modules fineract-cn-deposit-account-management fineract-cn-cheques 
-get modules fineract-cn-payroll fineract-cn-teller fineract-cn-reporting fineract-cn-notifications
+get_modules fineract-cn-office fineract-cn-customer fineract-cn-group fineract-cn-accounting fineract-cn-portfolio 
+get_modules fineract-cn-deposit-account-management fineract-cn-cheques 
+get_modules fineract-cn-payroll fineract-cn-teller fineract-cn-reporting fineract-cn-notifications
 
 mkdir integration-tests
 cd integration-tests
